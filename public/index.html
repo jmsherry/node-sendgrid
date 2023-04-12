@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emailer</title>
+  <script src="/scripts/index.js" type="module"></script>
+</head>
+
+<body>
+  <h1>The Jump Emailer</h1>
+  <form name="mail-form">
+    <div class="row">
+      <label for="from">From <input type="email" name="from" id="from" placeholder="tom@test.com" required></label>
+    </div>
+    <div class="row">
+      <label for="to">To <input type="email" name="to" id="to" placeholder="tom@test.com" required></label>
+    </div>
+    <div class="row">
+      <label for="subject">Subject <input type="text" name="subject" id="subject" placeholder="For your consideration"
+          required></label>
+    </div>
+    <div class="row">
+      <div>
+        <label for="message">
+          Message
+        </label>
+      </div>
+      <textarea name="message" id="message" placeholder="Message..." required></textarea>
+    </div>
+    <div class="row">
+      <button type="reset">Reset</button><button type="send">Send</button>
+    </div>
+  </form>
+</body>
+
+</html>
